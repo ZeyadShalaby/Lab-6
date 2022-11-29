@@ -1,7 +1,9 @@
-function Person (hours= 6, meals = 2, items = 2){
-    this.hours = hours;
-    this.meals = meals; 
-    this.item = item;
+var Person = {
+    innit: function (fname, sleepMode, money, healthRate){
+    this.fname = fName,
+    this.sleepMode = sleepMode,
+    this.money = money,
+    this.healthRate = healthRate,
     
     this.sleep = function () {
         if (hours > 7){
@@ -36,8 +38,8 @@ function Person (hours= 6, meals = 2, items = 2){
        this.buy = function (item) {
          return this.money=item*-10;
        }
-    
+    }
      
 }
 
-var person = new Person (6 , 2 , 1)
+var person = object.create(Person).innit
